@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sat Jan 05 14:12:12 2019
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : H_L_DETECT
+Top-level Entity Name : H_L_DETECT
+Family : ACEX1K
+Device : EP1K10TC100-1
+Timing Models : Final
+Total logic elements : 17 / 576 ( 3 % )
+Total pins : 4 / 66 ( 6 % )
+Total memory bits : 0 / 12,288 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )

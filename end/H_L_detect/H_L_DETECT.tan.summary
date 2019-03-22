@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.400 ns
+From           : clear
+To             : clr
+From Clock     : wheel
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 188.68 MHz ( period = 5.300 ns )
+From           : lpm_counter:cnt_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[7]
+To             : lpm_counter:cnt_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[5]
+From Clock     : CLK
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'wheel'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 250.00 MHz ( period = 4.000 ns )
+From           : clear
+To             : clear
+From Clock     : wheel
+To Clock       : wheel
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
