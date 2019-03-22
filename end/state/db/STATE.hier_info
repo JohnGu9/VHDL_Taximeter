@@ -1,0 +1,8 @@
+|state
+button => enable.CLK
+CLK => c.CLK
+CLK => flag.CLK
+EN <= enable.DB_MAX_OUTPUT_PORT_TYPE
+RST <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
