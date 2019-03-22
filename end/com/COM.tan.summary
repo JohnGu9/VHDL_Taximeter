@@ -1,0 +1,146 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.166 ns
+From           : button_night
+To             : start_price:total_price_counter|total_price[13]
+From Clock     : --
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 86.429 ns
+From           : start_price:total_price_counter|total_price[11]
+To             : display_num1[4]
+From Clock     : CLK
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.639 ns
+From           : CLK
+To             : buzz:buzz_run|sound
+From Clock     : --
+To Clock       : wheel
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 67.74 MHz ( period = 14.763 ns )
+From           : unit_price:unit_price_counter|wait_times[3]
+To             : start_price:total_price_counter|total_price[13]
+From Clock     : CLK
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'wheel'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 178.79 MHz ( period = 5.593 ns )
+From           : start_price:total_price_counter|cnt[3]
+To             : RUN:run_pulse_generator|o
+From Clock     : wheel
+To Clock       : wheel
+Failed Paths   : 0
+
+Type           : Clock Setup: 'button_run_inc'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 420.17 MHz ( period = 2.380 ns )
+From           : unit_price:unit_price_counter|run_price_inc[0]
+To             : unit_price:unit_price_counter|run_price_inc[7]
+From Clock     : button_run_inc
+To Clock       : button_run_inc
+Failed Paths   : 0
+
+Type           : Clock Setup: 'button_run_de'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 420.17 MHz ( period = 2.380 ns )
+From           : unit_price:unit_price_counter|run_price_de[0]
+To             : unit_price:unit_price_counter|run_price_de[7]
+From Clock     : button_run_de
+To Clock       : button_run_de
+Failed Paths   : 0
+
+Type           : Clock Setup: 'button_wait_inc'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 420.17 MHz ( period = 2.380 ns )
+From           : unit_price:unit_price_counter|wait_price_inc[0]
+To             : unit_price:unit_price_counter|wait_price_inc[7]
+From Clock     : button_wait_inc
+To Clock       : button_wait_inc
+Failed Paths   : 0
+
+Type           : Clock Setup: 'button_wait_de'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 420.17 MHz ( period = 2.380 ns )
+From           : unit_price:unit_price_counter|wait_price_de[0]
+To             : unit_price:unit_price_counter|wait_price_de[7]
+From Clock     : button_wait_de
+To Clock       : button_wait_de
+Failed Paths   : 0
+
+Type           : Clock Setup: 'button_start_inc'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 420.17 MHz ( period = 2.380 ns )
+From           : start_price:total_price_counter|start_price_inc[0]
+To             : start_price:total_price_counter|start_price_inc[15]
+From Clock     : button_start_inc
+To Clock       : button_start_inc
+Failed Paths   : 0
+
+Type           : Clock Setup: 'button_start_de'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 420.17 MHz ( period = 2.380 ns )
+From           : start_price:total_price_counter|start_price_de[0]
+To             : start_price:total_price_counter|start_price_de[15]
+From Clock     : button_start_de
+To Clock       : button_start_de
+Failed Paths   : 0
+
+Type           : Clock Setup: 'button_start'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 420.17 MHz ( period = 2.380 ns )
+From           : state:state_control|enable
+To             : state:state_control|enable
+From Clock     : button_start
+To Clock       : button_start
+Failed Paths   : 0
+
+Type           : Clock Hold: 'CLK'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : buzz:buzz_wait|cnt[9]
+To             : buzz:buzz_wait|sound
+From Clock     : CLK
+To Clock       : CLK
+Failed Paths   : 8
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 8
+
+--------------------------------------------------------------------------------------
+

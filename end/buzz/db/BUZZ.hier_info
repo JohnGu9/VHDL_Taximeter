@@ -1,0 +1,26 @@
+|BUZZ
+pulse => cnt[9].ACLR
+pulse => cnt[8].ACLR
+pulse => cnt[7].ACLR
+pulse => cnt[6].ACLR
+pulse => cnt[5].ACLR
+pulse => cnt[4].ACLR
+pulse => cnt[3].ACLR
+pulse => cnt[2].ACLR
+pulse => cnt[1].ACLR
+pulse => cnt[0].ACLR
+pulse => sound$latch.LATCH_ENABLE
+CLK => cnt[9].CLK
+CLK => cnt[8].CLK
+CLK => cnt[7].CLK
+CLK => cnt[6].CLK
+CLK => cnt[5].CLK
+CLK => cnt[4].CLK
+CLK => cnt[3].CLK
+CLK => cnt[2].CLK
+CLK => cnt[1].CLK
+CLK => cnt[0].CLK
+CLK => sound~0.DATAB
+sound <= sound$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

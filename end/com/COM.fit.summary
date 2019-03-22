@@ -1,0 +1,12 @@
+Fitter Status : Successful - Sun Mar 10 13:11:39 2019
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : COM
+Top-level Entity Name : com
+Family : APEX II
+Device : EP2A15B724C7
+Timing Models : Final
+Total logic elements : 2,114 / 16,640 ( 13 % )
+Total pins : 59 / 492 ( 12 % )
+Total virtual pins : 0
+Total memory bits : 0 / 425,984 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
