@@ -1,0 +1,44 @@
+|decode
+num4[0] => Mux5.IN19
+num4[0] => Mux4.IN19
+num4[0] => Mux3.IN19
+num4[0] => Mux2.IN19
+num4[0] => Mux1.IN19
+num4[0] => Mux0.IN19
+num4[1] => Mux6.IN10
+num4[1] => Mux5.IN18
+num4[1] => Mux4.IN18
+num4[1] => Mux3.IN18
+num4[1] => Mux2.IN18
+num4[1] => Mux1.IN18
+num4[1] => Mux0.IN18
+num4[2] => Mux6.IN9
+num4[2] => Mux5.IN17
+num4[2] => Mux4.IN17
+num4[2] => Mux3.IN17
+num4[2] => Mux2.IN17
+num4[2] => Mux1.IN17
+num4[2] => Mux0.IN17
+num4[3] => Mux6.IN8
+num4[3] => Mux5.IN16
+num4[3] => Mux4.IN16
+num4[3] => Mux3.IN16
+num4[3] => Mux2.IN16
+num4[3] => Mux1.IN16
+num4[3] => Mux0.IN16
+reset => num7~6.OUTPUTSELECT
+reset => num7~5.OUTPUTSELECT
+reset => num7~4.OUTPUTSELECT
+reset => num7~3.OUTPUTSELECT
+reset => num7~2.OUTPUTSELECT
+reset => num7~1.OUTPUTSELECT
+reset => num7~0.OUTPUTSELECT
+num7[0] <= num7~6.DB_MAX_OUTPUT_PORT_TYPE
+num7[1] <= num7~5.DB_MAX_OUTPUT_PORT_TYPE
+num7[2] <= num7~4.DB_MAX_OUTPUT_PORT_TYPE
+num7[3] <= num7~3.DB_MAX_OUTPUT_PORT_TYPE
+num7[4] <= num7~2.DB_MAX_OUTPUT_PORT_TYPE
+num7[5] <= num7~1.DB_MAX_OUTPUT_PORT_TYPE
+num7[6] <= num7~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
