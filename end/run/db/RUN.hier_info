@@ -1,0 +1,16 @@
+|RUN
+EN => process_0~0.IN0
+EN2 => process_0~1.IN1
+start => process_0~0.IN1
+wheel => cnt[7].CLK
+wheel => cnt[6].CLK
+wheel => cnt[5].CLK
+wheel => cnt[4].CLK
+wheel => cnt[3].CLK
+wheel => cnt[2].CLK
+wheel => cnt[1].CLK
+wheel => cnt[0].CLK
+wheel => o.CLK
+pulse <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+

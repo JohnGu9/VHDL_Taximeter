@@ -1,0 +1,12 @@
+Fitter Status : Successful - Sun Jan 06 19:54:47 2019
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : RUN
+Top-level Entity Name : RUN
+Family : APEX II
+Device : EP2A15B724C7
+Timing Models : Final
+Total logic elements : 20 / 16,640 ( < 1 % )
+Total pins : 5 / 492 ( 1 % )
+Total virtual pins : 0
+Total memory bits : 0 / 425,984 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
