@@ -1,0 +1,11 @@
+Fitter Status : Successful - Mon Jan 07 12:37:28 2019
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : START_PRICE
+Top-level Entity Name : start_price
+Family : ACEX1K
+Device : EP1K10TC100-1
+Timing Models : Final
+Total logic elements : 123 / 576 ( 21 % )
+Total pins : 37 / 66 ( 56 % )
+Total memory bits : 0 / 12,288 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )
