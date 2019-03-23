@@ -1,0 +1,96 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 38.300 ns
+From           : lpm_counter:wait_price_inc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[0]
+To             : price[15]
+From Clock     : wait_inc
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 10.500 ns
+From           : night
+To             : price[3]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'wait_inc'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 250.00 MHz ( period = 4.000 ns )
+From           : lpm_counter:wait_price_inc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[0]
+To             : lpm_counter:wait_price_inc_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[7]
+From Clock     : wait_inc
+To Clock       : wait_inc
+Failed Paths   : 0
+
+Type           : Clock Setup: 'wait_de'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 250.00 MHz ( period = 4.000 ns )
+From           : lpm_counter:wait_price_de_rtl_1|alt_counter_f10ke:wysi_counter|counter_cell[0]
+To             : lpm_counter:wait_price_de_rtl_1|alt_counter_f10ke:wysi_counter|counter_cell[7]
+From Clock     : wait_de
+To Clock       : wait_de
+Failed Paths   : 0
+
+Type           : Clock Setup: 'run_de'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 250.00 MHz ( period = 4.000 ns )
+From           : lpm_counter:run_price_de_rtl_3|alt_counter_f10ke:wysi_counter|counter_cell[0]
+To             : lpm_counter:run_price_de_rtl_3|alt_counter_f10ke:wysi_counter|counter_cell[7]
+From Clock     : run_de
+To Clock       : run_de
+Failed Paths   : 0
+
+Type           : Clock Setup: 'run_inc'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 250.00 MHz ( period = 4.000 ns )
+From           : lpm_counter:run_price_inc_rtl_4|alt_counter_f10ke:wysi_counter|counter_cell[0]
+To             : lpm_counter:run_price_inc_rtl_4|alt_counter_f10ke:wysi_counter|counter_cell[7]
+From Clock     : run_inc
+To Clock       : run_inc
+Failed Paths   : 0
+
+Type           : Clock Setup: 'wait_pulse'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 250.00 MHz ( period = 4.000 ns )
+From           : lpm_counter:wait_times_rtl_2|alt_counter_f10ke:wysi_counter|counter_cell[1]
+To             : lpm_counter:wait_times_rtl_2|alt_counter_f10ke:wysi_counter|counter_cell[7]
+From Clock     : wait_pulse
+To Clock       : wait_pulse
+Failed Paths   : 0
+
+Type           : Clock Setup: 'run_pulse'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 250.00 MHz ( period = 4.000 ns )
+From           : lpm_counter:run_times_rtl_5|alt_counter_f10ke:wysi_counter|counter_cell[1]
+To             : lpm_counter:run_times_rtl_5|alt_counter_f10ke:wysi_counter|counter_cell[7]
+From Clock     : run_pulse
+To Clock       : run_pulse
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
