@@ -1,0 +1,665 @@
+Fitter report for UNIT_PRICE
+Sun Jan 06 21:57:12 2019
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. Fitter Device Options
+  6. Input Pins
+  7. Output Pins
+  8. All Package Pins
+  9. Control Signals
+ 10. Global & Other Fast Signals
+ 11. Carry Chains
+ 12. Non-Global High Fan-Out Signals
+ 13. LAB
+ 14. Local Routing Interconnect
+ 15. LAB External Interconnect
+ 16. Row Interconnect
+ 17. LAB Column Interconnect
+ 18. LAB Column Interconnect
+ 19. Fitter Resource Usage Summary
+ 20. Fitter Resource Utilization by Entity
+ 21. Delay Chain Summary
+ 22. Pin-Out File
+ 23. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------+
+; Fitter Summary                                                       ;
++-----------------------+----------------------------------------------+
+; Fitter Status         ; Successful - Sun Jan 06 21:57:12 2019        ;
+; Quartus II Version    ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
+; Revision Name         ; UNIT_PRICE                                   ;
+; Top-level Entity Name ; unit_price                                   ;
+; Family                ; ACEX1K                                       ;
+; Device                ; EP1K10TC100-1                                ;
+; Timing Models         ; Final                                        ;
+; Total logic elements  ; 395 / 576 ( 69 % )                           ;
+; Total pins            ; 24 / 66 ( 36 % )                             ;
+; Total memory bits     ; 0 / 12,288 ( 0 % )                           ;
+; Total PLLs            ; 0 / 1 ( 0 % )                                ;
++-----------------------+----------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                      ;
++------------------------------------------------------------+--------------------+--------------------+
+; Option                                                     ; Setting            ; Default Value      ;
++------------------------------------------------------------+--------------------+--------------------+
+; Device                                                     ; AUTO               ;                    ;
+; Use smart compilation                                      ; Off                ; Off                ;
+; Use TimeQuest Timing Analyzer                              ; Off                ; Off                ;
+; Router Timing Optimization Level                           ; Normal             ; Normal             ;
+; Placement Effort Multiplier                                ; 1.0                ; 1.0                ;
+; Router Effort Multiplier                                   ; 1.0                ; 1.0                ;
+; Optimize Timing                                            ; Normal compilation ; Normal compilation ;
+; Optimize Timing for ECOs                                   ; Off                ; Off                ;
+; Regenerate full fit report during ECO compiles             ; Off                ; Off                ;
+; Optimize IOC Register Placement for Timing                 ; On                 ; On                 ;
+; Limit to One Fitting Attempt                               ; Off                ; Off                ;
+; Final Placement Optimizations                              ; Automatically      ; Automatically      ;
+; Fitter Aggressive Routability Optimizations                ; Automatically      ; Automatically      ;
+; Fitter Initial Placement Seed                              ; 1                  ; 1                  ;
+; Slow Slew Rate                                             ; Off                ; Off                ;
+; PCI I/O                                                    ; Off                ; Off                ;
+; Auto Global Memory Control Signals                         ; Off                ; Off                ;
+; Logic Cell Insertion - Individual Logic Cells              ; On                 ; On                 ;
+; Logic Cell Insertion - I/Os Fed By Carry or Cascade Chains ; On                 ; On                 ;
+; Fitter Effort                                              ; Auto Fit           ; Auto Fit           ;
+; Auto Global Clock                                          ; On                 ; On                 ;
+; Auto Global Output Enable                                  ; On                 ; On                 ;
+; Auto Global Register Control Signals                       ; On                 ; On                 ;
+; Force Fitter to Avoid Periphery Placement Warnings         ; Off                ; Off                ;
++------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------+
+; Fitter Device Options                                                   ;
++----------------------------------------------+--------------------------+
+; Option                                       ; Setting                  ;
++----------------------------------------------+--------------------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off                      ;
+; Enable device-wide reset (DEV_CLRn)          ; Off                      ;
+; Enable device-wide output enable (DEV_OE)    ; Off                      ;
+; Enable INIT_DONE output                      ; Off                      ;
+; Configuration scheme                         ; Passive Serial           ;
+; nWS, nRS, nCS, CS                            ; Unreserved               ;
+; RDYnBUSY                                     ; Unreserved               ;
+; Data[7..1]                                   ; Unreserved               ;
+; Reserve all unused pins                      ; As output driving ground ;
+; Base pin-out file on sameframe device        ; Off                      ;
++----------------------------------------------+--------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                                   ;
++------------+-------+-----+------+---------+--------+--------------+-------------------------+---------------+-----------------+---------------+--------------+
+; Name       ; Pin # ; Row ; Col. ; Fan-Out ; Global ; I/O Register ; Use Local Routing Input ; Power Up High ; PCI I/O Enabled ; Single-Pin CE ; I/O Standard ;
++------------+-------+-----+------+---------+--------+--------------+-------------------------+---------------+-----------------+---------------+--------------+
+; night      ; 68    ;  A  ; --   ; 15      ; no     ; no           ; no                      ; no            ; no              ; no            ; LVTTL/LVCMOS ;
+; rst        ; 91    ; --  ; --   ; 16      ; yes    ; no           ; no                      ; no            ; no              ; no            ; LVTTL/LVCMOS ;
+; run_pulse  ; 39    ; --  ; --   ; 8       ; yes    ; no           ; no                      ; no            ; no              ; no            ; LVTTL/LVCMOS ;
+; wait_pulse ; 90    ; --  ; --   ; 8       ; yes    ; no           ; no                      ; no            ; no              ; no            ; LVTTL/LVCMOS ;
+; run_inc    ; 89    ; --  ; --   ; 8       ; yes    ; no           ; no                      ; no            ; no              ; no            ; LVTTL/LVCMOS ;
+; run_de     ; 38    ; --  ; --   ; 8       ; yes    ; no           ; no                      ; no            ; no              ; no            ; LVTTL/LVCMOS ;
+; wait_de    ; 40    ; --  ; --   ; 8       ; yes    ; no           ; no                      ; no            ; no              ; no            ; LVTTL/LVCMOS ;
+; wait_inc   ; 15    ;  B  ; --   ; 8       ; no     ; no           ; no                      ; no            ; no              ; no            ; LVTTL/LVCMOS ;
++------------+-------+-----+------+---------+--------+--------------+-------------------------+---------------+-----------------+---------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                             ;
++-----------+-------+-----+------+--------------+--------------------------+---------------+----------------+-----------------+---------------+---------------+------------+---------------+--------------+
+; Name      ; Pin # ; Row ; Col. ; I/O Register ; Use Local Routing Output ; Power Up High ; Slow Slew Rate ; PCI I/O Enabled ; Single-Pin OE ; Single-Pin CE ; Open Drain ; TRI Primitive ; I/O Standard ;
++-----------+-------+-----+------+--------------+--------------------------+---------------+----------------+-----------------+---------------+---------------+------------+---------------+--------------+
+; price[0]  ; 71    ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; price[1]  ; 28    ; --  ; 20   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; price[2]  ; 94    ; --  ; 19   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; price[3]  ; 69    ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; price[4]  ; 7     ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; price[5]  ; 99    ; --  ; 24   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; price[6]  ; 70    ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; price[7]  ; 29    ; --  ; 19   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; price[8]  ; 6     ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; price[9]  ; 97    ; --  ; 23   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; price[10] ; 5     ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; price[11] ; 30    ; --  ; 18   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; price[12] ; 98    ; --  ; 24   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; price[13] ; 9     ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; price[14] ; 8     ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
+; price[15] ; 10    ;  A  ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; LVTTL/LVCMOS ;
++-----------+-------+-----+------+--------------+--------------------------+---------------+----------------+-----------------+---------------+---------------+------------+---------------+--------------+
+
+
++-----------------------------------+
+; All Package Pins                  ;
++-------+------------+--------------+
+; Pin # ; Usage      ; I/O Standard ;
++-------+------------+--------------+
+; 1     ; ^CONF_DONE ;              ;
+; 2     ; ^nCEO      ;              ;
+; 3     ; #TDO       ;              ;
+; 4     ; VCC_IO     ;              ;
+; 5     ; price[10]  ; LVTTL/LVCMOS ;
+; 6     ; price[8]   ; LVTTL/LVCMOS ;
+; 7     ; price[4]   ; LVTTL/LVCMOS ;
+; 8     ; price[14]  ; LVTTL/LVCMOS ;
+; 9     ; price[13]  ; LVTTL/LVCMOS ;
+; 10    ; price[15]  ; LVTTL/LVCMOS ;
+; 11    ; GND_INT    ;              ;
+; 12    ; VCC_INT    ;              ;
+; 13    ; GND*       ;              ;
+; 14    ; GND*       ;              ;
+; 15    ; wait_inc   ; LVTTL/LVCMOS ;
+; 16    ; GND*       ;              ;
+; 17    ; VCC_IO     ;              ;
+; 18    ; GND_INT    ;              ;
+; 19    ; GND*       ;              ;
+; 20    ; GND*       ;              ;
+; 21    ; GND*       ;              ;
+; 22    ; GND*       ;              ;
+; 23    ; GND*       ;              ;
+; 24    ; #TMS       ;              ;
+; 25    ; ^nSTATUS   ;              ;
+; 26    ; GND*       ;              ;
+; 27    ; GND*       ;              ;
+; 28    ; price[1]   ; LVTTL/LVCMOS ;
+; 29    ; price[7]   ; LVTTL/LVCMOS ;
+; 30    ; price[11]  ; LVTTL/LVCMOS ;
+; 31    ; GND*       ;              ;
+; 32    ; GND*       ;              ;
+; 33    ; GND*       ;              ;
+; 34    ; GND*       ;              ;
+; 35    ; VCC_INT    ;              ;
+; 36    ; GND_INT    ;              ;
+; 37    ; VCC_CKLK   ;              ;
+; 38    ; run_de     ; LVTTL/LVCMOS ;
+; 39    ; run_pulse  ; LVTTL/LVCMOS ;
+; 40    ; wait_de    ; LVTTL/LVCMOS ;
+; 41    ; GND_CKLK   ;              ;
+; 42    ; GND_INT    ;              ;
+; 43    ; GND*       ;              ;
+; 44    ; VCC_IO     ;              ;
+; 45    ; GND*       ;              ;
+; 46    ; GND*       ;              ;
+; 47    ; GND*       ;              ;
+; 48    ; GND*       ;              ;
+; 49    ; GND*       ;              ;
+; 50    ; GND*       ;              ;
+; 51    ; ^nCONFIG   ;              ;
+; 52    ; VCC_INT    ;              ;
+; 53    ; ^MSEL1     ;              ;
+; 54    ; ^MSEL0     ;              ;
+; 55    ; GND*       ;              ;
+; 56    ; GND*       ;              ;
+; 57    ; GND*       ;              ;
+; 58    ; GND*       ;              ;
+; 59    ; GND_INT    ;              ;
+; 60    ; VCC_INT    ;              ;
+; 61    ; GND*       ;              ;
+; 62    ; GND*       ;              ;
+; 63    ; GND*       ;              ;
+; 64    ; GND*       ;              ;
+; 65    ; GND*       ;              ;
+; 66    ; GND_INT    ;              ;
+; 67    ; VCC_IO     ;              ;
+; 68    ; night      ; LVTTL/LVCMOS ;
+; 69    ; price[3]   ; LVTTL/LVCMOS ;
+; 70    ; price[6]   ; LVTTL/LVCMOS ;
+; 71    ; price[0]   ; LVTTL/LVCMOS ;
+; 72    ; VCC_INT    ;              ;
+; 73    ; #TDI       ;              ;
+; 74    ; ^nCE       ;              ;
+; 75    ; ^DCLK      ;              ;
+; 76    ; ^DATA0     ;              ;
+; 77    ; GND*       ;              ;
+; 78    ; GND*       ;              ;
+; 79    ; GND*       ;              ;
+; 80    ; GND*       ;              ;
+; 81    ; GND*       ;              ;
+; 82    ; GND*       ;              ;
+; 83    ; VCC_IO     ;              ;
+; 84    ; GND*       ;              ;
+; 85    ; GND*       ;              ;
+; 86    ; GND*       ;              ;
+; 87    ; GND*       ;              ;
+; 88    ; GND_INT    ;              ;
+; 89    ; run_inc    ; LVTTL/LVCMOS ;
+; 90    ; wait_pulse ; LVTTL/LVCMOS ;
+; 91    ; rst        ; LVTTL/LVCMOS ;
+; 92    ; VCC_INT    ;              ;
+; 93    ; GND*       ;              ;
+; 94    ; price[2]   ; LVTTL/LVCMOS ;
+; 95    ; GND_INT    ;              ;
+; 96    ; GND*       ;              ;
+; 97    ; price[9]   ; LVTTL/LVCMOS ;
+; 98    ; price[12]  ; LVTTL/LVCMOS ;
+; 99    ; price[5]   ; LVTTL/LVCMOS ;
+; 100   ; #TCK       ;              ;
++-------+------------+--------------+
+
+
++------------------------------------------------------------+
+; Control Signals                                            ;
++------------+-------+---------+--------------+--------------+
+; Name       ; Pin # ; Fan-Out ; Usage        ; Global Usage ;
++------------+-------+---------+--------------+--------------+
+; rst        ; 91    ; 16      ; Async. clear ; Pin          ;
+; run_pulse  ; 39    ; 8       ; Clock        ; Pin          ;
+; wait_pulse ; 90    ; 8       ; Clock        ; Pin          ;
+; run_inc    ; 89    ; 8       ; Clock        ; Pin          ;
+; run_de     ; 38    ; 8       ; Clock        ; Pin          ;
+; wait_de    ; 40    ; 8       ; Clock        ; Pin          ;
+; wait_inc   ; 15    ; 8       ; Clock        ; Non-global   ;
++------------+-------+---------+--------------+--------------+
+
+
++---------------------------------------+
+; Global & Other Fast Signals           ;
++------------+-------+---------+--------+
+; Name       ; Pin # ; Fan-Out ; Global ;
++------------+-------+---------+--------+
+; rst        ; 91    ; 16      ; yes    ;
+; run_pulse  ; 39    ; 8       ; yes    ;
+; wait_pulse ; 90    ; 8       ; yes    ;
+; run_inc    ; 89    ; 8       ; yes    ;
+; run_de     ; 38    ; 8       ; yes    ;
+; wait_de    ; 40    ; 8       ; yes    ;
++------------+-------+---------+--------+
+
+
++---------------------------------------------+
+; Carry Chains                                ;
++--------------------+------------------------+
+; Carry Chain Length ; Number of Carry Chains ;
++--------------------+------------------------+
+; 0                  ; 0                      ;
+; 1                  ; 0                      ;
+; 2                  ; 2                      ;
+; 3                  ; 0                      ;
+; 4                  ; 4                      ;
+; 5                  ; 0                      ;
+; 6                  ; 0                      ;
+; 7                  ; 1                      ;
+; 8                  ; 9                      ;
+; 9                  ; 0                      ;
+; 10                 ; 0                      ;
+; 11                 ; 0                      ;
+; 12                 ; 0                      ;
+; 13                 ; 0                      ;
+; 14                 ; 2                      ;
+; 15                 ; 1                      ;
+; 16                 ; 1                      ;
++--------------------+------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Non-Global High Fan-Out Signals                                                                                            ;
++------------------------------------------------------------------------------------------------------------------+---------+
+; Name                                                                                                             ; Fan-Out ;
++------------------------------------------------------------------------------------------------------------------+---------+
+; night                                                                                                            ; 15      ;
+; lpm_mult:Mult1|mult_af01:auto_generated|cs1a[0]~COUT                                                             ; 13      ;
+; lpm_mult:Mult0|mult_af01:auto_generated|cs1a[0]~COUT                                                             ; 13      ;
+; lpm_mult:Mult0|mult_af01:auto_generated|cs1a[2]~COUT                                                             ; 13      ;
+; lpm_mult:Mult1|mult_af01:auto_generated|cs1a[2]~COUT                                                             ; 13      ;
+; lpm_mult:Mult1|mult_af01:auto_generated|cs1a[1]~COUT                                                             ; 12      ;
+; lpm_mult:Mult0|mult_af01:auto_generated|cs1a[1]~COUT                                                             ; 12      ;
+; lpm_mult:Mult1|mult_af01:auto_generated|cs2a[1]~COUT                                                             ; 10      ;
+; lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT                                         ; 10      ;
+; lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT                                         ; 10      ;
+; lpm_mult:Mult1|mult_af01:auto_generated|cs2a[0]~COUT                                                             ; 10      ;
+; lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT                                         ; 10      ;
+; lpm_mult:Mult0|mult_af01:auto_generated|cs2a[0]~COUT                                                             ; 10      ;
+; lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT                                         ; 10      ;
+; lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT                                         ; 10      ;
+; lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]~COUT                                         ; 10      ;
+; lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT                                         ; 10      ;
+; lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT                                         ; 10      ;
+; lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT                                         ; 10      ;
+; lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]~COUT                                         ; 10      ;
+; lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT                                         ; 10      ;
+; lpm_mult:Mult0|mult_af01:auto_generated|cs2a[1]~COUT                                                             ; 10      ;
+; lpm_mult:Mult1|mult_af01:auto_generated|cs2a[2]~COUT                                                             ; 10      ;
+; lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT                                         ; 10      ;
+; lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT                                         ; 10      ;
+; lpm_mult:Mult0|mult_af01:auto_generated|cs2a[2]~COUT                                                             ; 10      ;
+; lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT                                         ; 10      ;
+; lpm_add_sub:Add6|addcore:adder|unreg_res_node[8]~9                                                               ; 9       ;
+; lpm_add_sub:Add4|addcore:adder|unreg_res_node[8]~9                                                               ; 9       ;
+; wait_inc                                                                                                         ; 8       ;
+; lpm_counter:wait_times_rtl_2|alt_counter_f10ke:wysi_counter|counter_cell[7]~1                                    ; 8       ;
+; lpm_mult:Mult0|mult_af01:auto_generated|cs1a[3]~32                                                               ; 8       ;
+; lpm_mult:Mult0|mult_af01:auto_generated|cs2a[3]~30                                                               ; 8       ;
+; lpm_mult:Mult1|mult_af01:auto_generated|cs1a[3]~32                                                               ; 8       ;
+; lpm_mult:Mult1|mult_af01:auto_generated|cs2a[3]~30                                                               ; 8       ;
+; lpm_counter:run_times_rtl_5|alt_counter_f10ke:wysi_counter|counter_cell[7]~1                                     ; 8       ;
+; lpm_mult:Mult1|mult_af01:auto_generated|le3a[9]~20                                                               ; 6       ;
+; lpm_mult:Mult0|mult_af01:auto_generated|le3a[9]~20                                                               ; 6       ;
+; lpm_counter:wait_times_rtl_2|alt_counter_f10ke:wysi_counter|counter_cell[2]~COUT                                 ; 3       ;
+; lpm_counter:wait_times_rtl_2|alt_counter_f10ke:wysi_counter|counter_cell[6]~COUT                                 ; 3       ;
+; lpm_mult:Mult0|mult_af01:auto_generated|lpm_add_sub:op_1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; 3       ;
+; lpm_counter:wait_times_rtl_2|alt_counter_f10ke:wysi_counter|counter_cell[3]~COUT                                 ; 3       ;
+; lpm_add_sub:Add7|addcore:adder|a_csnbuffer:result_node|cs_buffer[14]~COUT                                        ; 3       ;
+; lpm_mult:Mult1|mult_af01:auto_generated|lpm_add_sub:op_1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; 3       ;
+; lpm_mult:Mult1|mult_af01:auto_generated|lpm_add_sub:op_1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; 3       ;
+; lpm_mult:Mult1|mult_af01:auto_generated|lpm_add_sub:op_1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; 3       ;
+; lpm_add_sub:Add7|addcore:adder|a_csnbuffer:result_node|cs_buffer[11]~COUT                                        ; 3       ;
+; lpm_add_sub:Add7|addcore:adder|a_csnbuffer:result_node|cs_buffer[10]~COUT                                        ; 3       ;
+; lpm_counter:wait_times_rtl_2|alt_counter_f10ke:wysi_counter|counter_cell[1]~COUT                                 ; 3       ;
+; lpm_counter:run_times_rtl_5|alt_counter_f10ke:wysi_counter|counter_cell[4]~COUT                                  ; 3       ;
++------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------+
+; LAB                                       ;
++--------------------------+----------------+
+; Number of Logic Elements ; Number of LABs ;
++--------------------------+----------------+
+; 0                        ; 12             ;
+; 1                        ; 7              ;
+; 2                        ; 1              ;
+; 3                        ; 1              ;
+; 4                        ; 1              ;
+; 5                        ; 4              ;
+; 6                        ; 0              ;
+; 7                        ; 9              ;
+; 8                        ; 37             ;
++--------------------------+----------------+
+
+
++----------------------------------------------+
+; Local Routing Interconnect                   ;
++-----------------------------+----------------+
+; Local Routing Interconnects ; Number of LABs ;
++-----------------------------+----------------+
+; 0                           ; 45             ;
+; 1                           ; 7              ;
+; 2                           ; 2              ;
+; 3                           ; 4              ;
+; 4                           ; 10             ;
+; 5                           ; 4              ;
++-----------------------------+----------------+
+
+
++---------------------------------------------+
+; LAB External Interconnect                   ;
++----------------------------+----------------+
+; LAB External Interconnects ; Number of LABs ;
++----------------------------+----------------+
+; 0                          ; 18             ;
+; 1                          ; 2              ;
+; 2                          ; 1              ;
+; 3                          ; 2              ;
+; 4                          ; 3              ;
+; 5                          ; 2              ;
+; 6                          ; 1              ;
+; 7                          ; 11             ;
+; 8                          ; 11             ;
+; 9                          ; 2              ;
+; 10                         ; 5              ;
+; 11                         ; 5              ;
+; 12                         ; 0              ;
+; 13                         ; 2              ;
+; 14                         ; 2              ;
+; 15                         ; 1              ;
+; 16                         ; 4              ;
++----------------------------+----------------+
+
+
++------------------------------------------------------------------------------------------+
+; Row Interconnect                                                                         ;
++-------+---------------------+-----------------------------+------------------------------+
+; Row   ; Interconnect Used   ; Left Half Interconnect Used ; Right Half Interconnect Used ;
++-------+---------------------+-----------------------------+------------------------------+
+;  A    ;  35 / 96 ( 36 % )   ;  23 / 48 ( 48 % )           ;  36 / 48 ( 75 % )            ;
+;  B    ;  45 / 96 ( 47 % )   ;  27 / 48 ( 56 % )           ;  40 / 48 ( 83 % )            ;
+;  C    ;  45 / 96 ( 47 % )   ;  20 / 48 ( 42 % )           ;  37 / 48 ( 77 % )            ;
+; Total ;  125 / 288 ( 43 % ) ;  70 / 144 ( 49 % )          ;  113 / 144 ( 78 % )          ;
++-------+---------------------+-----------------------------+------------------------------+
+
+
++----------------------------+
+; LAB Column Interconnect    ;
++-------+--------------------+
+; Col.  ; Interconnect Used  ;
++-------+--------------------+
+; 1     ;  2 / 24 ( 8 % )    ;
+; 2     ;  1 / 24 ( 4 % )    ;
+; 3     ;  0 / 24 ( 0 % )    ;
+; 4     ;  8 / 24 ( 33 % )   ;
+; 5     ;  1 / 24 ( 4 % )    ;
+; 6     ;  1 / 24 ( 4 % )    ;
+; 7     ;  0 / 24 ( 0 % )    ;
+; 8     ;  7 / 24 ( 29 % )   ;
+; 9     ;  2 / 24 ( 8 % )    ;
+; 10    ;  0 / 24 ( 0 % )    ;
+; 11    ;  0 / 24 ( 0 % )    ;
+; 12    ;  0 / 24 ( 0 % )    ;
+; 13    ;  3 / 24 ( 13 % )   ;
+; 14    ;  3 / 24 ( 13 % )   ;
+; 15    ;  1 / 24 ( 4 % )    ;
+; 16    ;  2 / 24 ( 8 % )    ;
+; 17    ;  3 / 24 ( 13 % )   ;
+; 18    ;  1 / 24 ( 4 % )    ;
+; 19    ;  6 / 24 ( 25 % )   ;
+; 20    ;  2 / 24 ( 8 % )    ;
+; 21    ;  4 / 24 ( 17 % )   ;
+; 22    ;  0 / 24 ( 0 % )    ;
+; 23    ;  3 / 24 ( 13 % )   ;
+; 24    ;  5 / 24 ( 21 % )   ;
+; Total ;  55 / 576 ( 10 % ) ;
++-------+--------------------+
+
+
++---------------------------+
+; LAB Column Interconnect   ;
++-------+-------------------+
+; Col.  ; Interconnect Used ;
++-------+-------------------+
+; 1     ;  0 / 48 ( 0 % )   ;
+; Total ;  0 / 48 ( 0 % )   ;
++-------+-------------------+
+
+
++--------------------------------------------------------+
+; Fitter Resource Usage Summary                          ;
++-----------------------------------+--------------------+
+; Resource                          ; Usage              ;
++-----------------------------------+--------------------+
+; Total logic elements              ; 395 / 576 ( 69 % ) ;
+; Registers                         ; 48 / 576 ( 8 % )   ;
+; Logic elements in carry chains    ; 158                ;
+; User inserted logic elements      ; 0                  ;
+; I/O pins                          ; 24 / 66 ( 36 % )   ;
+;     -- Clock pins                 ; 3 / 2 ( 150 % )    ;
+;     -- Dedicated input pins       ; 7 / 4 ( 175 % )    ;
+; Global signals                    ; 6                  ;
+; EABs                              ; 0 / 3 ( 0 % )      ;
+; Total memory bits                 ; 0 / 12,288 ( 0 % ) ;
+; Total RAM block bits              ; 0 / 12,288 ( 0 % ) ;
+; PLLs                              ; 0 / 1 ( 0 % )      ;
+; Maximum fan-out node              ; rst                ;
+; Maximum fan-out                   ; 16                 ;
+; Highest non-global fan-out signal ; night              ;
+; Highest non-global fan-out        ; 15                 ;
+; Total fan-out                     ; 1093               ;
+; Average fan-out                   ; 2.61               ;
++-----------------------------------+--------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                       ;
++------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node               ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                        ; Library Name ;
++------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------+--------------+
+; |unit_price                              ; 395 (15)    ; 48           ; 0           ; 24   ; 347 (15)     ; 0 (0)             ; 48 (0)           ; 158 (0)         ; 0 (0)      ; |unit_price                                                                                                ; work         ;
+;    |lpm_add_sub:Add2|                    ; 15 (0)      ; 0            ; 0           ; 0    ; 15 (0)       ; 0 (0)             ; 0 (0)            ; 15 (0)          ; 0 (0)      ; |unit_price|lpm_add_sub:Add2                                                                               ; work         ;
+;       |addcore:adder|                    ; 15 (1)      ; 0            ; 0           ; 0    ; 15 (1)       ; 0 (0)             ; 0 (0)            ; 15 (1)          ; 0 (0)      ; |unit_price|lpm_add_sub:Add2|addcore:adder                                                                 ; work         ;
+;          |a_csnbuffer:result_node|       ; 14 (14)     ; 0            ; 0           ; 0    ; 14 (14)      ; 0 (0)             ; 0 (0)            ; 14 (14)         ; 0 (0)      ; |unit_price|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node                                         ; work         ;
+;    |lpm_add_sub:Add3|                    ; 8 (0)       ; 0            ; 0           ; 0    ; 8 (0)        ; 0 (0)             ; 0 (0)            ; 8 (0)           ; 0 (0)      ; |unit_price|lpm_add_sub:Add3                                                                               ; work         ;
+;       |addcore:adder|                    ; 8 (1)       ; 0            ; 0           ; 0    ; 8 (1)        ; 0 (0)             ; 0 (0)            ; 8 (1)           ; 0 (0)      ; |unit_price|lpm_add_sub:Add3|addcore:adder                                                                 ; work         ;
+;          |a_csnbuffer:result_node|       ; 7 (7)       ; 0            ; 0           ; 0    ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 7 (7)           ; 0 (0)      ; |unit_price|lpm_add_sub:Add3|addcore:adder|a_csnbuffer:result_node                                         ; work         ;
+;    |lpm_add_sub:Add4|                    ; 7 (0)       ; 0            ; 0           ; 0    ; 7 (0)        ; 0 (0)             ; 0 (0)            ; 7 (0)           ; 0 (0)      ; |unit_price|lpm_add_sub:Add4                                                                               ; work         ;
+;       |addcore:adder|                    ; 7 (1)       ; 0            ; 0           ; 0    ; 7 (1)        ; 0 (0)             ; 0 (0)            ; 7 (1)           ; 0 (0)      ; |unit_price|lpm_add_sub:Add4|addcore:adder                                                                 ; work         ;
+;          |a_csnbuffer:result_node|       ; 6 (6)       ; 0            ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 6 (6)           ; 0 (0)      ; |unit_price|lpm_add_sub:Add4|addcore:adder|a_csnbuffer:result_node                                         ; work         ;
+;    |lpm_add_sub:Add5|                    ; 8 (0)       ; 0            ; 0           ; 0    ; 8 (0)        ; 0 (0)             ; 0 (0)            ; 8 (0)           ; 0 (0)      ; |unit_price|lpm_add_sub:Add5                                                                               ; work         ;
+;       |addcore:adder|                    ; 8 (1)       ; 0            ; 0           ; 0    ; 8 (1)        ; 0 (0)             ; 0 (0)            ; 8 (1)           ; 0 (0)      ; |unit_price|lpm_add_sub:Add5|addcore:adder                                                                 ; work         ;
+;          |a_csnbuffer:result_node|       ; 7 (7)       ; 0            ; 0           ; 0    ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 7 (7)           ; 0 (0)      ; |unit_price|lpm_add_sub:Add5|addcore:adder|a_csnbuffer:result_node                                         ; work         ;
+;    |lpm_add_sub:Add6|                    ; 8 (0)       ; 0            ; 0           ; 0    ; 8 (0)        ; 0 (0)             ; 0 (0)            ; 8 (0)           ; 0 (0)      ; |unit_price|lpm_add_sub:Add6                                                                               ; work         ;
+;       |addcore:adder|                    ; 8 (1)       ; 0            ; 0           ; 0    ; 8 (1)        ; 0 (0)             ; 0 (0)            ; 8 (1)           ; 0 (0)      ; |unit_price|lpm_add_sub:Add6|addcore:adder                                                                 ; work         ;
+;          |a_csnbuffer:result_node|       ; 7 (7)       ; 0            ; 0           ; 0    ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 7 (7)           ; 0 (0)      ; |unit_price|lpm_add_sub:Add6|addcore:adder|a_csnbuffer:result_node                                         ; work         ;
+;    |lpm_add_sub:Add7|                    ; 16 (0)      ; 0            ; 0           ; 0    ; 16 (0)       ; 0 (0)             ; 0 (0)            ; 16 (0)          ; 0 (0)      ; |unit_price|lpm_add_sub:Add7                                                                               ; work         ;
+;       |addcore:adder|                    ; 16 (1)      ; 0            ; 0           ; 0    ; 16 (1)       ; 0 (0)             ; 0 (0)            ; 16 (1)          ; 0 (0)      ; |unit_price|lpm_add_sub:Add7|addcore:adder                                                                 ; work         ;
+;          |a_csnbuffer:result_node|       ; 15 (15)     ; 0            ; 0           ; 0    ; 15 (15)      ; 0 (0)             ; 0 (0)            ; 15 (15)         ; 0 (0)      ; |unit_price|lpm_add_sub:Add7|addcore:adder|a_csnbuffer:result_node                                         ; work         ;
+;    |lpm_counter:run_price_de_rtl_3|      ; 8 (0)       ; 8            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 8 (0)            ; 8 (0)           ; 0 (0)      ; |unit_price|lpm_counter:run_price_de_rtl_3                                                                 ; work         ;
+;       |alt_counter_f10ke:wysi_counter|   ; 8 (8)       ; 8            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 8 (8)           ; 0 (0)      ; |unit_price|lpm_counter:run_price_de_rtl_3|alt_counter_f10ke:wysi_counter                                  ; work         ;
+;    |lpm_counter:run_price_inc_rtl_4|     ; 8 (0)       ; 8            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 8 (0)            ; 8 (0)           ; 0 (0)      ; |unit_price|lpm_counter:run_price_inc_rtl_4                                                                ; work         ;
+;       |alt_counter_f10ke:wysi_counter|   ; 8 (8)       ; 8            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 8 (8)           ; 0 (0)      ; |unit_price|lpm_counter:run_price_inc_rtl_4|alt_counter_f10ke:wysi_counter                                 ; work         ;
+;    |lpm_counter:run_times_rtl_5|         ; 8 (0)       ; 8            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 8 (0)            ; 8 (0)           ; 0 (0)      ; |unit_price|lpm_counter:run_times_rtl_5                                                                    ; work         ;
+;       |alt_counter_f10ke:wysi_counter|   ; 8 (8)       ; 8            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 8 (8)           ; 0 (0)      ; |unit_price|lpm_counter:run_times_rtl_5|alt_counter_f10ke:wysi_counter                                     ; work         ;
+;    |lpm_counter:wait_price_de_rtl_1|     ; 8 (0)       ; 8            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 8 (0)            ; 8 (0)           ; 0 (0)      ; |unit_price|lpm_counter:wait_price_de_rtl_1                                                                ; work         ;
+;       |alt_counter_f10ke:wysi_counter|   ; 8 (8)       ; 8            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 8 (8)           ; 0 (0)      ; |unit_price|lpm_counter:wait_price_de_rtl_1|alt_counter_f10ke:wysi_counter                                 ; work         ;
+;    |lpm_counter:wait_price_inc_rtl_0|    ; 8 (0)       ; 8            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 8 (0)            ; 8 (0)           ; 0 (0)      ; |unit_price|lpm_counter:wait_price_inc_rtl_0                                                               ; work         ;
+;       |alt_counter_f10ke:wysi_counter|   ; 8 (8)       ; 8            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 8 (8)           ; 0 (0)      ; |unit_price|lpm_counter:wait_price_inc_rtl_0|alt_counter_f10ke:wysi_counter                                ; work         ;
+;    |lpm_counter:wait_times_rtl_2|        ; 8 (0)       ; 8            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 8 (0)            ; 8 (0)           ; 0 (0)      ; |unit_price|lpm_counter:wait_times_rtl_2                                                                   ; work         ;
+;       |alt_counter_f10ke:wysi_counter|   ; 8 (8)       ; 8            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 8 (8)           ; 0 (0)      ; |unit_price|lpm_counter:wait_times_rtl_2|alt_counter_f10ke:wysi_counter                                    ; work         ;
+;    |lpm_mult:Mult0|                      ; 135 (0)     ; 0            ; 0           ; 0    ; 135 (0)      ; 0 (0)             ; 0 (0)            ; 24 (0)          ; 0 (0)      ; |unit_price|lpm_mult:Mult0                                                                                 ; work         ;
+;       |mult_af01:auto_generated|         ; 135 (57)    ; 0            ; 0           ; 0    ; 135 (57)     ; 0 (0)             ; 0 (0)            ; 24 (8)          ; 0 (0)      ; |unit_price|lpm_mult:Mult0|mult_af01:auto_generated                                                        ; work         ;
+;          |lpm_add_sub:op_1|              ; 14 (0)      ; 0            ; 0           ; 0    ; 14 (0)       ; 0 (0)             ; 0 (0)            ; 14 (0)          ; 0 (0)      ; |unit_price|lpm_mult:Mult0|mult_af01:auto_generated|lpm_add_sub:op_1                                       ; work         ;
+;             |addcore:adder|              ; 14 (1)      ; 0            ; 0           ; 0    ; 14 (1)       ; 0 (0)             ; 0 (0)            ; 14 (1)          ; 0 (0)      ; |unit_price|lpm_mult:Mult0|mult_af01:auto_generated|lpm_add_sub:op_1|addcore:adder                         ; work         ;
+;                |a_csnbuffer:result_node| ; 13 (13)     ; 0            ; 0           ; 0    ; 13 (13)      ; 0 (0)             ; 0 (0)            ; 13 (13)         ; 0 (0)      ; |unit_price|lpm_mult:Mult0|mult_af01:auto_generated|lpm_add_sub:op_1|addcore:adder|a_csnbuffer:result_node ; work         ;
+;          |lpm_add_sub:op_2|              ; 21 (0)      ; 0            ; 0           ; 0    ; 21 (0)       ; 0 (0)             ; 0 (0)            ; 1 (0)           ; 0 (0)      ; |unit_price|lpm_mult:Mult0|mult_af01:auto_generated|lpm_add_sub:op_2                                       ; work         ;
+;             |addcore:adder|              ; 21 (0)      ; 0            ; 0           ; 0    ; 21 (0)       ; 0 (0)             ; 0 (0)            ; 1 (0)           ; 0 (0)      ; |unit_price|lpm_mult:Mult0|mult_af01:auto_generated|lpm_add_sub:op_2|addcore:adder                         ; work         ;
+;                |a_csnbuffer:result_node| ; 21 (21)     ; 0            ; 0           ; 0    ; 21 (21)      ; 0 (0)             ; 0 (0)            ; 1 (1)           ; 0 (0)      ; |unit_price|lpm_mult:Mult0|mult_af01:auto_generated|lpm_add_sub:op_2|addcore:adder|a_csnbuffer:result_node ; work         ;
+;          |lpm_add_sub:op_3|              ; 12 (0)      ; 0            ; 0           ; 0    ; 12 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |unit_price|lpm_mult:Mult0|mult_af01:auto_generated|lpm_add_sub:op_3                                       ; work         ;
+;             |addcore:adder|              ; 12 (0)      ; 0            ; 0           ; 0    ; 12 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |unit_price|lpm_mult:Mult0|mult_af01:auto_generated|lpm_add_sub:op_3|addcore:adder                         ; work         ;
+;                |a_csnbuffer:result_node| ; 12 (12)     ; 0            ; 0           ; 0    ; 12 (12)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |unit_price|lpm_mult:Mult0|mult_af01:auto_generated|lpm_add_sub:op_3|addcore:adder|a_csnbuffer:result_node ; work         ;
+;          |lpm_add_sub:op_5|              ; 31 (0)      ; 0            ; 0           ; 0    ; 31 (0)       ; 0 (0)             ; 0 (0)            ; 1 (0)           ; 0 (0)      ; |unit_price|lpm_mult:Mult0|mult_af01:auto_generated|lpm_add_sub:op_5                                       ; work         ;
+;             |addcore:adder|              ; 31 (1)      ; 0            ; 0           ; 0    ; 31 (1)       ; 0 (0)             ; 0 (0)            ; 1 (1)           ; 0 (0)      ; |unit_price|lpm_mult:Mult0|mult_af01:auto_generated|lpm_add_sub:op_5|addcore:adder                         ; work         ;
+;                |a_csnbuffer:result_node| ; 30 (30)     ; 0            ; 0           ; 0    ; 30 (30)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |unit_price|lpm_mult:Mult0|mult_af01:auto_generated|lpm_add_sub:op_5|addcore:adder|a_csnbuffer:result_node ; work         ;
+;    |lpm_mult:Mult1|                      ; 135 (0)     ; 0            ; 0           ; 0    ; 135 (0)      ; 0 (0)             ; 0 (0)            ; 24 (0)          ; 0 (0)      ; |unit_price|lpm_mult:Mult1                                                                                 ; work         ;
+;       |mult_af01:auto_generated|         ; 135 (57)    ; 0            ; 0           ; 0    ; 135 (57)     ; 0 (0)             ; 0 (0)            ; 24 (8)          ; 0 (0)      ; |unit_price|lpm_mult:Mult1|mult_af01:auto_generated                                                        ; work         ;
+;          |lpm_add_sub:op_1|              ; 14 (0)      ; 0            ; 0           ; 0    ; 14 (0)       ; 0 (0)             ; 0 (0)            ; 14 (0)          ; 0 (0)      ; |unit_price|lpm_mult:Mult1|mult_af01:auto_generated|lpm_add_sub:op_1                                       ; work         ;
+;             |addcore:adder|              ; 14 (1)      ; 0            ; 0           ; 0    ; 14 (1)       ; 0 (0)             ; 0 (0)            ; 14 (1)          ; 0 (0)      ; |unit_price|lpm_mult:Mult1|mult_af01:auto_generated|lpm_add_sub:op_1|addcore:adder                         ; work         ;
+;                |a_csnbuffer:result_node| ; 13 (13)     ; 0            ; 0           ; 0    ; 13 (13)      ; 0 (0)             ; 0 (0)            ; 13 (13)         ; 0 (0)      ; |unit_price|lpm_mult:Mult1|mult_af01:auto_generated|lpm_add_sub:op_1|addcore:adder|a_csnbuffer:result_node ; work         ;
+;          |lpm_add_sub:op_2|              ; 21 (0)      ; 0            ; 0           ; 0    ; 21 (0)       ; 0 (0)             ; 0 (0)            ; 1 (0)           ; 0 (0)      ; |unit_price|lpm_mult:Mult1|mult_af01:auto_generated|lpm_add_sub:op_2                                       ; work         ;
+;             |addcore:adder|              ; 21 (0)      ; 0            ; 0           ; 0    ; 21 (0)       ; 0 (0)             ; 0 (0)            ; 1 (0)           ; 0 (0)      ; |unit_price|lpm_mult:Mult1|mult_af01:auto_generated|lpm_add_sub:op_2|addcore:adder                         ; work         ;
+;                |a_csnbuffer:result_node| ; 21 (21)     ; 0            ; 0           ; 0    ; 21 (21)      ; 0 (0)             ; 0 (0)            ; 1 (1)           ; 0 (0)      ; |unit_price|lpm_mult:Mult1|mult_af01:auto_generated|lpm_add_sub:op_2|addcore:adder|a_csnbuffer:result_node ; work         ;
+;          |lpm_add_sub:op_3|              ; 12 (0)      ; 0            ; 0           ; 0    ; 12 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |unit_price|lpm_mult:Mult1|mult_af01:auto_generated|lpm_add_sub:op_3                                       ; work         ;
+;             |addcore:adder|              ; 12 (0)      ; 0            ; 0           ; 0    ; 12 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |unit_price|lpm_mult:Mult1|mult_af01:auto_generated|lpm_add_sub:op_3|addcore:adder                         ; work         ;
+;                |a_csnbuffer:result_node| ; 12 (12)     ; 0            ; 0           ; 0    ; 12 (12)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |unit_price|lpm_mult:Mult1|mult_af01:auto_generated|lpm_add_sub:op_3|addcore:adder|a_csnbuffer:result_node ; work         ;
+;          |lpm_add_sub:op_5|              ; 31 (0)      ; 0            ; 0           ; 0    ; 31 (0)       ; 0 (0)             ; 0 (0)            ; 1 (0)           ; 0 (0)      ; |unit_price|lpm_mult:Mult1|mult_af01:auto_generated|lpm_add_sub:op_5                                       ; work         ;
+;             |addcore:adder|              ; 31 (1)      ; 0            ; 0           ; 0    ; 31 (1)       ; 0 (0)             ; 0 (0)            ; 1 (1)           ; 0 (0)      ; |unit_price|lpm_mult:Mult1|mult_af01:auto_generated|lpm_add_sub:op_5|addcore:adder                         ; work         ;
+;                |a_csnbuffer:result_node| ; 30 (30)     ; 0            ; 0           ; 0    ; 30 (30)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |unit_price|lpm_mult:Mult1|mult_af01:auto_generated|lpm_add_sub:op_5|addcore:adder|a_csnbuffer:result_node ; work         ;
++------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------+
+; Delay Chain Summary                 ;
++------------+----------+-------------+
+; Name       ; Pin Type ; Pad to Core ;
++------------+----------+-------------+
+; night      ; Input    ; ON          ;
+; rst        ; Input    ; OFF         ;
+; run_pulse  ; Input    ; OFF         ;
+; wait_pulse ; Input    ; OFF         ;
+; run_inc    ; Input    ; OFF         ;
+; run_de     ; Input    ; OFF         ;
+; wait_de    ; Input    ; OFF         ;
+; wait_inc   ; Input    ; ON          ;
+; price[0]   ; Output   ; OFF         ;
+; price[1]   ; Output   ; OFF         ;
+; price[2]   ; Output   ; OFF         ;
+; price[3]   ; Output   ; OFF         ;
+; price[4]   ; Output   ; OFF         ;
+; price[5]   ; Output   ; OFF         ;
+; price[6]   ; Output   ; OFF         ;
+; price[7]   ; Output   ; OFF         ;
+; price[8]   ; Output   ; OFF         ;
+; price[9]   ; Output   ; OFF         ;
+; price[10]  ; Output   ; OFF         ;
+; price[11]  ; Output   ; OFF         ;
+; price[12]  ; Output   ; OFF         ;
+; price[13]  ; Output   ; OFF         ;
+; price[14]  ; Output   ; OFF         ;
+; price[15]  ; Output   ; OFF         ;
++------------+----------+-------------+
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in D:/VHDL/end/unit_price/UNIT_PRICE.pin.
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Info: *******************************************************************
+Info: Running Quartus II Fitter
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Jan 06 21:57:10 2019
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off UNIT_PRICE -c UNIT_PRICE
+Info: Automatically selected device EP1K10TC100-1 for design UNIT_PRICE
+Warning: Feature SignalProbe is not available with your current license
+Info: Fitter is using the Classic Timing Analyzer
+Info: Timing requirements not specified -- optimizing circuit to achieve the following default global requirements
+    Info: Assuming a global fmax requirement of 1000 MHz
+    Info: Not setting a global tsu requirement
+    Info: Not setting a global tco requirement
+    Info: Not setting a global tpd requirement
+Info: Inserted 0 logic cells in first fitting attempt
+Info: Started fitting attempt 1 on Sun Jan 06 2019 at 21:57:11
+Info: Fitter placement preparation operations beginning
+Info: Fitter placement preparation operations ending: elapsed time is 00:00:01
+Info: Fitter placement operations beginning
+Info: Fitter placement operations ending: elapsed time is 00:00:01
+Info: Fitter routing operations beginning
+Info: Fitter routing operations ending: elapsed time is 00:00:00
+Info: Quartus II Fitter was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 252 megabytes
+    Info: Processing ended: Sun Jan 06 21:57:13 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

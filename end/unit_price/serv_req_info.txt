@@ -1,0 +1,45 @@
+<internal_error>
+	<executable>quartus_sim.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x00c04df4: ccl_qtl + 0x4df4 (?close@QTL_ZOFSTREAM@@QAIXXZ + 0x34)
+	</callstack>
+	<error>Access Violation at 0X00C04DF4</error>
+	<date>Sun Jan 06 21:55:51 2019</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>Access Violation at 0X00C04DF4
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_sim.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x00bc4df4: ccl_qtl + 0x4df4 (?close@QTL_ZOFSTREAM@@QAIXXZ + 0x34)
+	</callstack>
+	<error>Access Violation at 0X00BC4DF4</error>
+	<date>Sun Jan 06 21:56:00 2019</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>Access Violation at 0X00BC4DF4
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_sim.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x00ba4df4: ccl_qtl + 0x4df4 (?close@QTL_ZOFSTREAM@@QAIXXZ + 0x34)
+	</callstack>
+	<error>Access Violation at 0X00BA4DF4</error>
+	<date>Sun Jan 06 21:56:17 2019</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>Access Violation at 0X00BA4DF4
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+
