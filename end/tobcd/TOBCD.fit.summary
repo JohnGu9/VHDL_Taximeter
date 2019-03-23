@@ -1,0 +1,12 @@
+Fitter Status : Successful - Sun Jan 06 18:21:58 2019
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : TOBCD
+Top-level Entity Name : tobcd
+Family : APEX II
+Device : EP2A15B724C7
+Timing Models : Final
+Total logic elements : 1,525 / 16,640 ( 9 % )
+Total pins : 32 / 492 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 0 / 425,984 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
